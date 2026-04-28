@@ -2,6 +2,8 @@
 
 A comprehensive, math-first learning path for Retrieval-Augmented Generation.
 
+[https://nitinkc.github.io/RAG-LearningTutorial/](https://nitinkc.github.io/RAG-LearningTutorial/)
+
 ## Overview
 
 This tutorial teaches you how to build RAG systems from first principles, with emphasis on solving real-world problems like **exact identifier matching** (Order #1766 vs #1767).
