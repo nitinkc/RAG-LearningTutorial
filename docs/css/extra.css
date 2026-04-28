@@ -1,0 +1,171 @@
+/* Custom CSS for RAG Learning Tutorial */
+
+/* ── Teal theme: Light mode ──────────────────────────────── */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #00897b;
+  --md-primary-fg-color--light: #4db6ac;
+  --md-primary-fg-color--dark:  #00695c;
+  --md-accent-fg-color:         #00bfa5;
+  --md-typeset-a-color:         #00897b;
+}
+
+/* ── Teal theme: Dark mode ───────────────────────────────── */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #4db6ac;
+  --md-primary-fg-color--light: #80cbc4;
+  --md-primary-fg-color--dark:  #00897b;
+  --md-accent-fg-color:         #64ffda;
+  --md-typeset-a-color:         #4db6ac;
+  --md-default-bg-color:        #1a1a2e;
+  --md-code-bg-color:           #0f3460;
+}
+
+/* KaTeX and MathJax styling */
+.arithmatex {
+  font-size: 1.05em;
+}
+
+/* Code block enhancements */
+.highlight {
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+/* Admonition improvements */
+.admonition {
+  margin: 1.5625em 0;
+  padding: 0 0.6rem 0.8rem 0.6rem;
+  border-left: 4px solid #00897b;
+  border-radius: 3px;
+}
+
+.admonition.note {
+  border-left-color: #00897b;
+}
+
+.admonition.warning {
+  border-left-color: #ff9100;
+}
+
+.admonition.tip {
+  border-left-color: #00bfa5;
+}
+
+.admonition.info {
+  border-left-color: #26c6da;
+}
+
+/* Table improvements */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #e0f2f1;
+  color: #00695c;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] th {
+  background-color: #00695c;
+  color: #e0f2f1;
+  border-bottom-color: #4db6ac;
+}
+
+[data-md-color-scheme="slate"] td {
+  border-bottom-color: #37474f;
+}
+
+/* Better spacing for lists */
+ul, ol {
+  margin: 1em 0;
+  padding-left: 2em;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+/* Equation reference styling */
+.equation-ref {
+  font-style: italic;
+  color: #00897b;
+}
+
+[data-md-color-scheme="slate"] .equation-ref {
+  color: #4db6ac;
+}
+
+/* Mermaid diagram styling */
+.mermaid {
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+/* Collapsible details styling */
+details {
+  margin: 1.5em 0;
+  padding: 0.5em 0;
+  border-left: 4px solid #00897b;
+  padding-left: 1em;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #00897b;
+  user-select: none;
+  outline: none;
+  padding: 0.5em 0;
+}
+
+details summary:hover {
+  color: #00bfa5;
+}
+
+details summary::-webkit-details-marker {
+  color: #00897b;
+}
+
+/* Dark mode styling for details */
+[data-md-color-scheme="slate"] details {
+  border-left-color: #4db6ac;
+}
+
+[data-md-color-scheme="slate"] details summary {
+  color: #4db6ac;
+}
+
+[data-md-color-scheme="slate"] details summary:hover {
+  color: #64ffda;
+}
+
+[data-md-color-scheme="slate"] details summary::-webkit-details-marker {
+  color: #4db6ac;
+}
+
+details > * {
+  margin: 0.5em 0;
+}
+
+details > summary ~ * {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

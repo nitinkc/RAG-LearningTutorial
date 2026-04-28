@@ -1,0 +1,105 @@
+site_name: RAG Learning Tutorial
+site_description: A comprehensive learning path for Retrieval-Augmented Generation from first principles to implementation
+site_author: Your Name
+site_url: https://example.com
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - header.autohide
+
+nav:
+  - Home: index.md
+  
+  - "00 · Prerequisites":
+    - Prerequisites: "00-prerequisites/index.md"
+    - Linear Algebra Essentials: "00-prerequisites/linear-algebra.md"
+    - Probability & Statistics: "00-prerequisites/probability-stats.md"
+  
+  - "01 · Understanding Embeddings":
+    - Embeddings Overview: "01-embeddings/index.md"
+    - What are Embeddings: "01-embeddings/what-are-embeddings.md"
+    - Embedding Models: "01-embeddings/embedding-models.md"
+    - Vector Spaces: "01-embeddings/vector-spaces.md"
+  
+  - "02 · Similarity Search":
+    - Similarity Search: "02-similarity-search/index.md"
+    - Distance Metrics: "02-similarity-search/distance-metrics.md"
+    - Exact vs Approximate Search: "02-similarity-search/exact-vs-ann.md"
+    - Vector Databases: "02-similarity-search/vector-databases.md"
+  
+  - "03 · Retrieval Methods":
+    - Retrieval Overview: "03-retrieval/index.md"
+    - Dense Retrieval: "03-retrieval/dense-retrieval.md"
+    - Sparse Retrieval: "03-retrieval/sparse-retrieval.md"
+    - Hybrid Search: "03-retrieval/hybrid-search.md"
+    - Metadata Filtering: "03-retrieval/metadata-filtering.md"
+    - Re-ranking: "03-retrieval/reranking.md"
+  
+  - "04 · Exact Match Problem":
+    - The Problem: "04-exact-match/index.md"
+    - Why Semantic Search Fails: "04-exact-match/why-semantic-fails.md"
+    - Hybrid Solutions: "04-exact-match/hybrid-solution.md"
+    - Chunking Strategies: "04-exact-match/chunking-strategies.md"
+
+  - "05 · RAG Pipeline":
+    - RAG Architecture: "05-rag-pipeline/index.md"
+    - Ingestion: "05-rag-pipeline/ingestion.md"
+    - Retrieval & Augmentation: "05-rag-pipeline/retrieval-augmentation.md"
+    - Generation: "05-rag-pipeline/generation.md"
+    - Evaluation: "05-rag-pipeline/evaluation.md"
+  
+  - References: references.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      disable_indented_code_blocks: true
+  - pymdownx.highlight:
+      use_pygments: true
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - def_list
+  - abbr
+  - pymdownx.arithmatex:
+      generic: true
+      block_tag: 'div'
+
+extra_javascript:
+  - js/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - js/mermaid-init.js
+  - js/theme-toggle.js
+
+extra_css:
+  - css/extra.css
