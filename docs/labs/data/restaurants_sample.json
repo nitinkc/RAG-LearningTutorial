@@ -1,0 +1,142 @@
+[
+  {
+    "id": "rest_001",
+    "name": "Bella Italia",
+    "address": "123 Main Street, New York, NY 10001",
+    "cuisine": "Italian",
+    "phone": "212-555-0001",
+    "description": "Authentic Italian restaurant serving traditional pasta and risotto dishes with imported ingredients",
+    "rating": 4.5,
+    "reviews": [
+      "Amazing pasta, felt like being in Rome",
+      "Great service and reasonable prices",
+      "Best carbonara outside Italy"
+    ]
+  },
+  {
+    "id": "rest_002",
+    "name": "Dragon Palace",
+    "address": "456 Canal Street, New York, NY 10013",
+    "cuisine": "Chinese",
+    "phone": "212-555-0002",
+    "description": "Dim sum and Cantonese cuisine restaurant with traditional cooking methods and fresh seafood daily",
+    "rating": 4.3,
+    "reviews": [
+      "Freshest seafood in Chinatown",
+      "Dim sum is absolutely delicious",
+      "Busy but worth the wait"
+    ]
+  },
+  {
+    "id": "rest_003",
+    "name": "Sakura Sushi",
+    "address": "789 5th Avenue, New York, NY 10022",
+    "cuisine": "Japanese",
+    "phone": "212-555-0003",
+    "description": "Premium sushi restaurant featuring omakase experience and rare Japanese seafood selections",
+    "rating": 4.8,
+    "reviews": [
+      "Best sushi experience in New York",
+      "Incredible omakase selection",
+      "Chef really knows his craft"
+    ]
+  },
+  {
+    "id": "rest_004",
+    "name": "Le Petit Café",
+    "address": "321 6th Avenue, New York, NY 10014",
+    "cuisine": "French",
+    "phone": "212-555-0004",
+    "description": "Cozy French bistro serving classic dishes like coq au vin, boeuf bourguignon, and fresh seafood",
+    "rating": 4.6,
+    "reviews": [
+      "Authentic French cooking at its best",
+      "Romantic atmosphere perfect for dates",
+      "Wine selection is excellent"
+    ]
+  },
+  {
+    "id": "rest_005",
+    "name": "Taco Fiesta",
+    "address": "654 W 3rd Street, New York, NY 10014",
+    "cuisine": "Mexican",
+    "phone": "212-555-0005",
+    "description": "Vibrant Mexican restaurant with authentic street tacos, mole sauce, and handmade tortillas",
+    "rating": 4.2,
+    "reviews": [
+      "Best tacos in the city",
+      "Pork carnitas are incredible",
+      "Fresh margaritas and great music"
+    ]
+  },
+  {
+    "id": "rest_006",
+    "name": "Taj Mahal",
+    "address": "987 Lexington Avenue, New York, NY 10065",
+    "cuisine": "Indian",
+    "phone": "212-555-0006",
+    "description": "Indian restaurant featuring traditional curries, tandoori specialties, and an extensive spice selection",
+    "rating": 4.4,
+    "reviews": [
+      "Aromatic spices and tender meat",
+      "Best butter chicken around",
+      "Authentic flavors from North India"
+    ]
+  },
+  {
+    "id": "rest_007",
+    "name": "Grill House Prime",
+    "address": "159 Park Avenue, New York, NY 10154",
+    "cuisine": "Steakhouse",
+    "phone": "212-555-0007",
+    "description": "Upscale steakhouse featuring dry-aged beef, prime cuts, and an award-winning wine collection",
+    "rating": 4.7,
+    "reviews": [
+      "Best steak in Manhattan",
+      "Impeccable service and atmosphere",
+      "Worth every penny for special occasions"
+    ]
+  },
+  {
+    "id": "rest_008",
+    "name": "Garden Vegan",
+    "address": "246 Washington Square West, New York, NY 10011",
+    "cuisine": "Vegan",
+    "phone": "212-555-0008",
+    "description": "Plant-based restaurant offering creative vegan dishes, with focus on fresh local organic produce",
+    "rating": 4.1,
+    "reviews": [
+      "Delicious vegan burgers and bowls",
+      "Even meat-eaters will enjoy",
+      "Great for dietary restrictions"
+    ]
+  },
+  {
+    "id": "rest_009",
+    "name": "Seoul Kitchen",
+    "address": "369 8th Avenue, New York, NY 10018",
+    "cuisine": "Korean",
+    "phone": "212-555-0009",
+    "description": "Korean BBQ and hot pot restaurant with interactive table grills and premium meat cuts",
+    "rating": 4.5,
+    "reviews": [
+      "Interactive Korean BBQ experience",
+      "Marinated beef is tender and flavorful",
+      "Fun atmosphere with friends"
+    ]
+  },
+  {
+    "id": "rest_010",
+    "name": "Oasis Mediterranean",
+    "address": "517 6th Avenue, New York, NY 10018",
+    "cuisine": "Mediterranean",
+    "phone": "212-555-0010",
+    "description": "Mediterranean cuisine featuring Greek, Turkish, and Lebanese dishes with fresh herbs and olive oil",
+    "rating": 4.3,
+    "reviews": [
+      "Fresh ingredients and bright flavors",
+      "Great hummus and tzatziki",
+      "Outdoor seating is lovely"
+    ]
+  }
+]

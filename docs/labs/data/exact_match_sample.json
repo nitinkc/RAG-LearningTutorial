@@ -1,0 +1,92 @@
+[
+  {
+    "order_id": "ORD-1766",
+    "customer": "Alice Johnson",
+    "amount": 125.50,
+    "items": ["Laptop Stand", "USB Cable"],
+    "date": "2024-01-15",
+    "status": "completed",
+    "description": "Customer ordered office equipment including a laptop stand and charging cable"
+  },
+  {
+    "order_id": "ORD-1767",
+    "customer": "Bob Smith",
+    "amount": 89.99,
+    "items": ["Desk Lamp", "Monitor"],
+    "date": "2024-01-15",
+    "status": "completed",
+    "description": "Customer ordered office equipment including a desk lamp and monitor for workspace setup"
+  },
+  {
+    "order_id": "ORD-1768",
+    "customer": "Carol Davis",
+    "amount": 199.00,
+    "items": ["Mechanical Keyboard", "Mouse"],
+    "date": "2024-01-16",
+    "status": "pending",
+    "description": "Customer ordered computer peripherals including a mechanical keyboard and wireless mouse"
+  },
+  {
+    "order_id": "ORD-1769",
+    "customer": "David Wilson",
+    "amount": 45.30,
+    "items": ["Phone Case"],
+    "date": "2024-01-16",
+    "status": "shipped",
+    "description": "Customer ordered a protective phone case for their mobile device"
+  },
+  {
+    "order_id": "ORD-1770",
+    "customer": "Emma Brown",
+    "amount": 320.00,
+    "items": ["Monitor 4K", "Mount Arm"],
+    "date": "2024-01-17",
+    "status": "completed",
+    "description": "Customer ordered high-resolution 4K monitor with mounting arm for ergonomic setup"
+  },
+  {
+    "order_id": "ORD-5476",
+    "customer": "Frank Miller",
+    "amount": 75.50,
+    "items": ["Webcam", "Microphone"],
+    "date": "2024-01-17",
+    "status": "completed",
+    "description": "Customer ordered video conferencing equipment including 1080p webcam and USB microphone"
+  },
+  {
+    "order_id": "ORD-5477",
+    "customer": "Grace Lee",
+    "amount": 159.99,
+    "items": ["Wireless Mouse", "Keyboard Pad"],
+    "date": "2024-01-18",
+    "status": "pending",
+    "description": "Customer ordered wireless input devices including mouse and ergonomic keyboard pad"
+  },
+  {
+    "order_id": "ORD-9342",
+    "customer": "Henry Martinez",
+    "amount": 212.75,
+    "items": ["Standing Desk", "Foot Stool"],
+    "date": "2024-01-18",
+    "status": "shipped",
+    "description": "Customer ordered adjustable standing desk with foot stool for better ergonomics"
+  },
+  {
+    "order_id": "ORD-9343",
+    "customer": "Iris Johnson",
+    "amount": 95.00,
+    "items": ["HDMI Cable", "Power Bank"],
+    "date": "2024-01-19",
+    "status": "completed",
+    "description": "Customer ordered connectivity and backup power equipment for mobile devices"
+  },
+  {
+    "order_id": "ORD-2345",
+    "customer": "Jack Anderson",
+    "amount": 540.00,
+    "items": ["Dual Monitor Setup", "GPU"],
+    "date": "2024-01-19",
+    "status": "completed",
+    "description": "Customer ordered high-end graphics setup with dual monitors and graphics processing unit"
+  }
+]

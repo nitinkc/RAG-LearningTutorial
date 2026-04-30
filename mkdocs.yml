@@ -66,6 +66,21 @@ nav:
     - Generation: "05-rag-pipeline/generation.md"
     - Evaluation: "05-rag-pipeline/evaluation.md"
   
+  - "06 · Practical Labs":
+    - Labs Overview: "labs/index.md"
+    - Quick Start: "labs/QUICK_START.md"
+    - Curriculum Guide: "labs/CURRICULUM_GUIDE.md"
+    - Setup Guide: "labs/SETUP.md"
+    - "Lab 0: Environment Setup": "labs/notebooks/lab_0_environment.ipynb"
+    - "Lab 1: Vector Math & Metrics": "labs/notebooks/lab_1_vector_math.ipynb"
+    - "Lab 2: Text Embeddings": "labs/notebooks/lab_2_embeddings.ipynb"
+    - "Lab 3: Vector Databases": "labs/notebooks/lab_3_chroma_basics.ipynb"
+    - "Lab 4: MongoDB Ingestion": "labs/notebooks/lab_4_mongodb_ingestion.ipynb"
+    - "Lab 5: Exact vs Semantic": "labs/notebooks/lab_5_exact_match_problem.ipynb"
+    - "Lab 6: Hybrid Search": "labs/notebooks/lab_6_hybrid_search.ipynb"
+    - "Lab 7: Complete RAG": "labs/notebooks/lab_7_complete_rag.ipynb"
+    - Data Sources: "labs/data/README.md"
+  
   - References: references.md
 
 plugins:
