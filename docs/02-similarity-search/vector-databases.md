@@ -5,6 +5,7 @@ Vector databases are specialized systems designed for efficiently storing and se
 ## What Is a Vector Database?
 
 A system that:
+
 1. **Stores** millions/billions of vectors and their metadata
 2. **Indexes** them for fast similarity search (using HNSW, IVF, etc.)
 3. **Provides filtering** (find similar vectors WHERE metadata matches)

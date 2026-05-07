@@ -4,5 +4,5 @@
 __pycache__
 *.pyc
 site/
-*.ipynb_checkpoints
-*.ipynb
+.ipynb_checkpoints/
+docs/labs/notebooks/chroma_data/

@@ -1,7 +1,7 @@
 site_name: RAG Learning Tutorial
 site_description: A comprehensive learning path for Retrieval-Augmented Generation from first principles to implementation
-site_author: Your Name
-site_url: https://example.com
+site_author: Nitin Chaurasia
+repo_url: https://github.com/nitinkc/RAG-LearningTutorial
 
 theme:
   name: material
