@@ -236,3 +236,5 @@ That's where **hybrid search** comes in.
 → **[Hybrid Search](hybrid-search.md)** — Combine dense + sparse to get the best of both!
 
 → [The Exact Match Problem](../04-exact-match/index.md) — Full solution strategy
+
+--8<-- "_abbreviations.md"

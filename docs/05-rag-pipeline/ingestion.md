@@ -278,3 +278,5 @@ print(f"Ingested {n_chunks} chunks")
 ## Next Step
 
 → [Retrieval & Augmentation](retrieval-augmentation.md) - Query processing
+
+--8<-- "_abbreviations.md"

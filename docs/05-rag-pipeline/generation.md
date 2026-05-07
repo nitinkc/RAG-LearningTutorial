@@ -242,3 +242,5 @@ def generate_safe(query, context, model="gpt-3.5-turbo"):
 ## Next Step
 
 → [Evaluation](evaluation.md) - Measuring system quality
+
+--8<-- "_abbreviations.md"

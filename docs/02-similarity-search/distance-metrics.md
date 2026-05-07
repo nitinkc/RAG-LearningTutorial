@@ -290,3 +290,5 @@ print("Cosine and dot rankings same?", np.array_equal(cosine_rank, dot_rank))
 → [Exact vs Approximate Search](exact-vs-ann.md) - How to search millions of vectors fast
 
 → [Vector Databases](vector-databases.md) - Production systems
+
+--8<-- "_abbreviations.md"

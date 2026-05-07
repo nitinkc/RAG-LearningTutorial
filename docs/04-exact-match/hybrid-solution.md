@@ -459,3 +459,5 @@ print("✅ Test 3 passed: Ambiguous query handled")
 → [Chunking Strategies](chunking-strategies.md) — Preparing documents properly
 
 → [RAG Pipeline](../05-rag-pipeline/index.md) — End-to-end system
+
+--8<-- "_abbreviations.md"

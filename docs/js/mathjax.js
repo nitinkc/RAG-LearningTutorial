@@ -1,3 +1,16 @@
+function renderMath() {
+  if (!window.MathJax || typeof window.MathJax.typesetPromise !== 'function') {
+    return;
+  }
+
+  // Clear prior state before re-typesetting after client-side navigation.
+  if (typeof window.MathJax.typesetClear === 'function') {
+    window.MathJax.typesetClear();
+  }
+
+  window.MathJax.typesetPromise().catch(err => console.log(err));
+}
+
 window.MathJax = {
   tex: {
     inlineMath: [['$', '$'], ['\\(', '\\)']],
@@ -10,15 +23,21 @@ window.MathJax = {
   },
   startup: {
     pageReady: function () {
-      return MathJax.typesetPromise().catch(err => console.log(err));
+      return window.MathJax.startup.defaultPageReady().then(() => {
+        renderMath();
+      });
     }
   }
 };
 
-// Re-render math after DOM changes (for navigation)
-if (window.MathJax && typeof MathJax.typesetPromise === 'function') {
-  document.addEventListener('turbo:load', function() {
-    MathJax.typesetPromise().catch(err => console.log(err));
+// Re-render math after instant navigation in MkDocs Material.
+if (window.document$ && typeof window.document$.subscribe === 'function') {
+  window.document$.subscribe(function () {
+    renderMath();
+  });
+} else {
+  // Fallback for non-instant navigation.
+  document.addEventListener('DOMContentLoaded', function () {
+    renderMath();
   });
 }
-

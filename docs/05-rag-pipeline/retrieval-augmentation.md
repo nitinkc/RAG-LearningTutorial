@@ -227,3 +227,5 @@ def evaluate_retrieval(query, retrieved_results, ground_truth_ids):
 ## Next Step
 
 → [Generation](generation.md) - LLM interaction and answer generation
+
+--8<-- "_abbreviations.md"

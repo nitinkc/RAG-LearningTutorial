@@ -59,3 +59,5 @@ This section answers that question with practical solutions.
 1. Dense search (find semantically similar)
 2. Sparse search (find exact keywords)
 3. Metadata filtering (enforce hard constraints)
+
+--8<-- "_abbreviations.md"

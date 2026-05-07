@@ -343,3 +343,5 @@ logger.info(f"Query processed: {metrics}")
 → [Generation](generation.md) — LLM interaction
 
 → [Evaluation](evaluation.md) — Measuring quality
+
+--8<-- "_abbreviations.md"

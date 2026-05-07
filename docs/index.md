@@ -162,3 +162,5 @@ You do NOT need:
 **Questions or feedback?** Each section has reference materials and citations at the bottom.
 
 Happy learning! 🚀
+
+--8<-- "_abbreviations.md"

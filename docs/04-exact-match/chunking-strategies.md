@@ -428,3 +428,5 @@ This maximally helps:
 ## Next Steps
 
 → [RAG Pipeline](../05-rag-pipeline/index.md) — Putting everything together
+
+--8<-- "_abbreviations.md"

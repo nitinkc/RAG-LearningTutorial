@@ -7,6 +7,8 @@
   --md-primary-fg-color--dark:  #00695c;
   --md-accent-fg-color:         #00bfa5;
   --md-typeset-a-color:         #00897b;
+  --abbr-tooltip-bg:            #00695c;
+  --abbr-tooltip-text:          #e0f2f1;
 }
 
 /* ── Teal theme: Dark mode ───────────────────────────────── */
@@ -18,6 +20,8 @@
   --md-typeset-a-color:         #4db6ac;
   --md-default-bg-color:        #1a1a2e;
   --md-code-bg-color:           #0f3460;
+  --abbr-tooltip-bg:            #64ffda;
+  --abbr-tooltip-text:          #001f1c;
 }
 
 /* KaTeX and MathJax styling */
@@ -91,6 +95,74 @@ ul, ol {
 
 li {
   margin: 0.5em 0;
+}
+
+/* Abbreviation / glossary tooltip styling */
+abbr[title] {
+  text-decoration: underline dotted;
+  text-underline-offset: 0.18em;
+  cursor: help;
+  border-bottom: 0;
+  position: relative;
+}
+
+abbr[title]:hover {
+  color: #00897b;
+}
+
+[data-md-color-scheme="slate"] abbr[title]:hover {
+  color: #64ffda;
+}
+
+/* Reliable custom tooltip for abbreviations */
+abbr[title]::after {
+  content: attr(title);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 10px);
+  transform: translateX(-50%) translateY(4px);
+  min-width: 10rem;
+  max-width: min(26rem, 80vw);
+  width: max-content;
+  padding: 0.4rem 0.55rem;
+  border-radius: 0.35rem;
+  background: var(--abbr-tooltip-bg);
+  color: var(--abbr-tooltip-text);
+  font-size: 0.72rem;
+  line-height: 1.3;
+  text-align: left;
+  white-space: normal;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 60;
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+}
+
+abbr[title]::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 4px);
+  transform: translateX(-50%) translateY(4px);
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: var(--abbr-tooltip-bg) transparent transparent transparent;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 60;
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+}
+
+abbr[title]:hover::after,
+abbr[title]:focus-visible::after,
+abbr[title]:hover::before,
+abbr[title]:focus-visible::before {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
 }
 
 /* Equation reference styling */

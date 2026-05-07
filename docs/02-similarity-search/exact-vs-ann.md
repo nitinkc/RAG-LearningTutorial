@@ -284,3 +284,5 @@ For **most RAG systems**:
 ---
 
 **Key Takeaway**: HNSW is the standard for ANN in RAG. It trades ~5% recall for 100x+ speed. For most use cases, this is the right trade-off.
+
+--8<-- "_abbreviations.md"

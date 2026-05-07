@@ -60,6 +60,12 @@ For vectors $\vec{u}$ and $\vec{v}$ of length $n$:
 
 $$\vec{u} \cdot \vec{v} = u_1 v_1 + u_2 v_2 + u_3 v_3 + \cdots + u_n v_n = \sum_{i=1}^{n} u_i v_i$$
 
+For vectors $\vec{a}$ and $\vec{b}$ with angle $\theta$ between them:
+
+$$\vec{a} \cdot \vec{b} = \|\vec{a}\|\,\|\vec{b}\|\cos\theta$$
+
+where $\|\vec{a}\|$ and $\|\vec{b}\|$ are magnitudes. If vectors are perpendicular, then $\theta = 90^\circ$ and $\cos\theta = 0$, so their dot product is zero.
+
 ### Why It Measures Similarity
 
 The dot product is **large and positive** when vectors point in the same direction (similar).
@@ -134,7 +140,7 @@ print(np.linalg.norm(v_normalized))  # 1.0
 
 When vectors are normalized, the dot product has a special name and property:
 
-$$\text{cosine\_similarity}(\vec{u}, \vec{v}) = \hat{\vec{u}} \cdot \hat{\vec{v}} = \frac{\vec{u} \cdot \vec{v}}{\|\vec{u}\| \cdot \|\vec{v}\|}$$
+$$\text{cosine_similarity}(\vec{u}, \vec{v}) = \hat{\vec{u}} \cdot \hat{\vec{v}} = \frac{\vec{u} \cdot \vec{v}}{\|\vec{u}\| \cdot \|\vec{v}\|}$$
 
 Why "cosine"? Because it equals the **cosine of the angle** between the vectors:
 
@@ -242,3 +248,5 @@ print(similarities.shape)
 ## Next Steps
 
 Now that you understand the math, move to [Probability & Statistics](probability-stats.md) to understand TF-IDF and term importance, or jump directly to [Embeddings](../01-embeddings/index.md).
+
+--8<-- "_abbreviations.md"

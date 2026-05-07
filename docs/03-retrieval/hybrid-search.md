@@ -365,3 +365,5 @@ plt.show()
 → [The Exact Match Problem](../04-exact-match/hybrid-solution.md) — Full strategy with filtering
 
 → [Re-ranking](reranking.md) — Further improve with cross-encoders
+
+--8<-- "_abbreviations.md"

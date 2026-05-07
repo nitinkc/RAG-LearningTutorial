@@ -189,3 +189,5 @@ For "Order #1766":
 ## Next Steps
 
 Now you have the mathematical foundations! Move to [Understanding Embeddings](../01-embeddings/index.md) to see how modern text → numbers conversion works.
+
+--8<-- "_abbreviations.md"

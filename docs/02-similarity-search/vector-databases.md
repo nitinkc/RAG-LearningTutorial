@@ -327,3 +327,5 @@ Plus SSD for persistence
 → [Retrieval Methods: Hybrid Search](../03-retrieval/hybrid-search.md) - Combining semantic + keyword search to solve the Order #1766 problem
 
 → [The Exact Match Problem](../04-exact-match/index.md) - Deep dive into solutions
+
+--8<-- "_abbreviations.md"

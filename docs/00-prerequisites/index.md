@@ -11,7 +11,9 @@ This section covers:
 
 ## Why This Matters
 
-Every embedding is a vector. Every "find similar documents" operation is a distance computation. Understanding these operations deeply explains why RAG systems work and why they sometimes fail (like with Order #1766 vs #1767).
+Every embedding is a vector. Every "find similar documents" operation is a distance computation. 
+Understanding these operations deeply explains why RAG systems work and why they sometimes fail 
+(like with Order #1766 vs #1767).
 
 ## What You Need Before This
 
@@ -28,3 +30,5 @@ Every embedding is a vector. Every "find similar documents" operation is a dista
 ---
 
 💡 **Tip**: Don't rush through the math. The clearer your foundation here, the more intuition you'll have when vectors get high-dimensional (hundreds or thousands of dimensions) later.
+
+--8<-- "_abbreviations.md"

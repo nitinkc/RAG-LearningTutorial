@@ -248,3 +248,5 @@ Now let's apply this knowledge:
 → [Distance Metrics](../02-similarity-search/distance-metrics.md) - Detailed math of different similarity measures
 
 → [Exact vs Approximate Search](../02-similarity-search/exact-vs-ann.md) - How to search among millions of vectors efficiently
+
+--8<-- "_abbreviations.md"

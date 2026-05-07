@@ -6,9 +6,11 @@ A comprehensive, math-first learning path for Retrieval-Augmented Generation.
 
 ## Overview
 
-This tutorial teaches you how to build RAG systems from first principles, with emphasis on solving real-world problems like **exact identifier matching** (Order #1766 vs #1767).
+This tutorial teaches you how to build RAG systems from first principles, with emphasis on solving
+real-world problems like **exact identifier matching** (Order #1766 vs #1767).
 
 **Learn:**
+
 - Linear algebra and vector mathematics fundamentals
 - How embeddings work and why they sometimes fail
 - Similarity search algorithms and vector databases
@@ -54,7 +56,6 @@ You do NOT need:
 ### Install Dependencies
 
 ```bash
-cd rag-learning-tutorial
 pip install -r requirements.txt
 ```
 
@@ -243,7 +244,3 @@ This tutorial is provided as-is for learning purposes.
 4. **Implement**: Build your own RAG system
 
 ---
-
-**Happy learning!** 🚀
-
-For questions or feedback, refer to [references.md](docs/references.md) for resources and communities.

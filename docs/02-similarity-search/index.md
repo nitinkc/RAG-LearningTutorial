@@ -44,3 +44,5 @@ In real-time (< 100ms ideally).
 4. [Vector Databases](vector-databases.md) — See production systems
 
 Then move to [Retrieval Methods](../03-retrieval/index.md) to learn about hybrid search.
+
+--8<-- "_abbreviations.md"

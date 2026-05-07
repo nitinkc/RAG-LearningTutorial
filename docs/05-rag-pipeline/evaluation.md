@@ -300,3 +300,5 @@ print(f"Latency change: {improved['latency'] - baseline['latency']:+.0f}ms")
 ---
 
 Congrats! You now understand RAG from first principles. 🎉
+
+--8<-- "_abbreviations.md"

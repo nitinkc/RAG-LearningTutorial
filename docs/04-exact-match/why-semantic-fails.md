@@ -243,3 +243,5 @@ Instead, **use the right tool for the job**:
 → [Hybrid Solution](hybrid-solution.md) — How to actually implement the fix
 
 → [Chunking Strategies](chunking-strategies.md) — Making sure IDs stay prominent
+
+--8<-- "_abbreviations.md"

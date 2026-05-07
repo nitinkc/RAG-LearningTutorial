@@ -29,6 +29,7 @@ This section explains:
 ## But Remember...
 
 Embeddings have limitations:
+
 - ❌ Excellent for capturing meaning
 - ❌ **Terrible for exact identifiers** (Order #1766 ≈ Order #1767 in embedding space)
 - ❌ Limited by context window of embedding model
@@ -50,3 +51,5 @@ Then move to [Similarity Search](../02-similarity-search/index.md).
 ---
 
 **Key Takeaway**: Embeddings are powerful but imperfect. They excel at capturing semantic meaning but fail for structured data. Understanding their strengths and weaknesses is crucial for building good RAG systems.
+
+--8<-- "_abbreviations.md"

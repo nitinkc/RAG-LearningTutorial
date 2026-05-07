@@ -180,6 +180,5 @@ for query in test_queries:
 5. **Agents** - Give LLMs ability to iteratively refine retrieval
 6. **Multi-modal RAG** - Combine text, images, and structured data
 
----
+--8<-- "_abbreviations.md"
 
-**Happy learning and building!** 🚀

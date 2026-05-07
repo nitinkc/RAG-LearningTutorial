@@ -288,3 +288,5 @@ scores = model.predict(pairs)
 → [The Exact Match Problem](../04-exact-match/index.md) — Putting all pieces together
 
 → [RAG Pipeline](../05-rag-pipeline/index.md) — End-to-end system
+
+--8<-- "_abbreviations.md"

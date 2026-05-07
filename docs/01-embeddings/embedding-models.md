@@ -289,3 +289,5 @@ Now that you understand embeddings, let's learn how to search with them:
 → [Distance Metrics](../02-similarity-search/distance-metrics.md)
 
 → [Exact vs Approximate Search](../02-similarity-search/exact-vs-ann.md)
+
+--8<-- "_abbreviations.md"

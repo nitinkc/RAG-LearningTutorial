@@ -90,7 +90,7 @@ From an embedding model's perspective:
 - "Order #1767" appears in very similar contexts
 - Therefore, the embedding treats them as nearly identical!
 
-$$\text{cosine\_similarity}("Order #1766", "Order #1767") \approx 0.99 \quad \text{(almost the same)}$$
+$$\text{cosine\_similarity}(Order 1766, Order 1767) \approx 0.99 \quad \text{(almost the same)}$$
 
 But they're NOT the same! They're different orders.
 
@@ -211,3 +211,5 @@ print(embeddings.shape)
 Ready to understand how embedding models work? → [Embedding Models](embedding-models.md)
 
 Or skip ahead to [Distance Metrics](../02-similarity-search/distance-metrics.md) if you want to learn how to use embeddings for search.
+
+--8<-- "_abbreviations.md"

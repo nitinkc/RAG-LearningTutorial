@@ -360,3 +360,5 @@ if "1766" in query:
 → [Re-ranking](reranking.md) — Improve result quality further
 
 → [The Exact Match Problem](../04-exact-match/hybrid-solution.md) — Putting it all together
+
+--8<-- "_abbreviations.md"

@@ -220,3 +220,5 @@ You need additional strategies:
 → [Sparse Retrieval: BM25](sparse-retrieval.md) — Learn how keyword search finds exact matches
 
 → [Hybrid Search](hybrid-search.md) — The solution combining both
+
+--8<-- "_abbreviations.md"

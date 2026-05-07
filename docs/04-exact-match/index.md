@@ -196,3 +196,5 @@ For highly structured data, consider bypassing embeddings entirely for exact ID 
 ---
 
 **The key insight**: You can't solve this with semantic search alone. You need a **layered approach** combining semantic, keyword, filtering, and smart chunking.
+
+--8<-- "_abbreviations.md"
