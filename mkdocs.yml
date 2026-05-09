@@ -80,7 +80,7 @@ nav:
     - "Lab 6: Hybrid Search": "labs/notebooks/lab_6_hybrid_search.ipynb"
     - "Lab 7: Complete RAG": "labs/notebooks/lab_7_complete_rag.ipynb"
     - Data Sources: "labs/data/README.md"
-  
+
   - References: references.md
 
 plugins:
@@ -113,8 +113,8 @@ markdown_extensions:
 extra_javascript:
   - js/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
   - js/mermaid-init.js
   - js/theme-toggle.js
 
