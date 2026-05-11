@@ -9,3 +9,4 @@ docs/labs/notebooks/chroma_data/
 .env
 .env.*
 !.env.example
+/.cache/
