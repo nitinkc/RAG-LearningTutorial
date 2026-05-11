@@ -72,7 +72,7 @@ nav:
     - "Lab 0: Environment Setup": "labs/notebooks/lab_0_environment.ipynb"
     - "Lab 1: Vector Math & Metrics": "labs/notebooks/lab_1_vector_math.ipynb"
     - "Lab 2: Text Embeddings": "labs/notebooks/lab_2_embeddings.ipynb"
-    - "Lab 3: Vector Databases": "labs/notebooks/lab_3_chroma_basics.ipynb"
+    - "Lab 3: Vector Databases": "labs/notebooks/lab_3_chroma_mongoDb_basics.ipynb"
     - "Lab 4: MongoDB Ingestion": "labs/notebooks/lab_4_mongodb_ingestion.ipynb"
     - "Lab 5: Exact vs Semantic": "labs/notebooks/lab_5_exact_match_problem.ipynb"
     - "Lab 6: Hybrid Search": "labs/notebooks/lab_6_hybrid_search.ipynb"

@@ -55,7 +55,7 @@ Welcome to the labs track. These notebooks are structured as college-level exerc
 
 ### Lab 3: Vector Databases with Chroma
 
-- **Notebook**: [lab_3_chroma_basics.ipynb](notebooks/lab_3_chroma_basics.ipynb)
+- **Notebook**: [lab_3_chroma_basics.ipynb](notebooks/lab_3_chroma_mongoDb_basics.ipynb)
 - **You will learn**:
   - Create and populate a Chroma index
   - Store vectors with metadata
