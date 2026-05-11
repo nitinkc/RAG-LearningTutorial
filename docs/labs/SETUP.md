@@ -88,7 +88,10 @@ Allow the IP Address of your machine to access the MongoDB Atlas cluster by addi
 ![allow_ip.png](../images/allow_ip.png)
 
 After the db is set up, you can inspect the search index to see how documents are being chunked and embedded for retrieval.
+
 ![search_index.png](../images/search_index.png)
+
+![vector_index_0.png](../images/vector_index_0.png)
 
 ![vector_index.png](../images/vector_index.png)
 
