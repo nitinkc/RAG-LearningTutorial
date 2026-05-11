@@ -22,10 +22,12 @@ User gets Document C as #2 instead of #3 - better results!
 ## Why Re-ranking Works
 
 **Retrieval models** (embeddings) are optimized for:
+
 - ✅ Speed (must process thousands of candidates)
 - ❌ Precision (might miss subtle relevance)
 
 **Re-ranking models** (cross-encoders) are optimized for:
+
 - ❌ Speed (only process top-K candidates)
 - ✅ Precision (deeply understand query-document pairs)
 
@@ -51,7 +53,8 @@ Document embedding: [0.11, 0.19, 0.32, ...]
 Score: cosine_similarity(query, document) = 0.98
 ```
 
-**Pros**: Fast (precompute document embeddings once)  
+**Pros**: Fast (precompute document embeddings once)
+
 **Cons**: Can't use query context to understand document
 
 ### Cross-encoders (Re-ranking)

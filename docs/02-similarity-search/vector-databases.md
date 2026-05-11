@@ -1,6 +1,6 @@
 # Vector Databases and Production Systems
 
-Vector databases are specialized systems designed for efficiently storing and searching embeddings at scale.
+Vector databases are specialized systems designed for efficiently storing and searching **embeddings** at scale.
 
 ## What Is a Vector Database?
 

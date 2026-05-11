@@ -32,10 +32,10 @@ Embedding Space (simplified 2D):
         |   "Order accepted"
         |    ◆ ◆
     ────┼───◆──◆──────────→
-"Order    | ◆ "Order #1766"
-numbers"  |  ◆ "Order #1767"
-          |   ◆ "Order #1765"
-          | ◆ ◆ "Order #1768"
+"Order  | ◆ "Order #1766"
+numbers"|  ◆ "Order #1767"
+        |   ◆ "Order #1765"
+        | ◆ ◆ "Order #1768"
         ↓
         
 All similar because they describe orders in similar ways!
@@ -52,11 +52,13 @@ Let $\vec{e}_{1766}$ and $\vec{e}_{1767}$ be embeddings for "Order #1766" and "O
 $$\text{cosine\_sim}(\vec{e}_{1766}, \vec{e}_{1767}) = \frac{\vec{e}_{1766} \cdot \vec{e}_{1767}}{\|\vec{e}_{1766}\| \cdot \|\vec{e}_{1767}\|}$$
 
 Both embeddings were trained on similar contexts:
+
 - Preceded by "Order #"
 - Followed by words like "confirmed", "pending", "shipped"
 - In documents about the same subject domain
 
 Therefore:
+
 - The vectors point in nearly the same direction
 - The dot product is very high
 - After normalization, cosine_sim ≈ 0.95-0.99
@@ -94,6 +96,7 @@ Why? The IDF term:
 $$\text{IDF}("1766") = \log\left(\frac{N}{df_{"1766"}}\right)$$
 
 where:
+
 - N = 1,000,000 documents
 - $df_{"1766"}$ = number containing "1766" = Often just 1!
 
@@ -110,7 +113,9 @@ TF("1767") = 0    (count)
 ```
 
 So when combined:
+
 $$\text{BM25}(\text{"1766"}) = 2 × 13.8 = 27.6 \text{ (high)}$$
+
 $$\text{BM25}(\text{"1767"}) = 0 × 13.8 = 0 \text{ (zero!)}$$
 
 **Perfect discrimination** because BM25 operates on exact tokens, not learned representations.
@@ -222,12 +227,12 @@ Stop trying to make embeddings do something they're fundamentally bad at.
 
 Instead, **use the right tool for the job**:
 
-| Task | Tool |
-|------|------|
-| "What is the status of my order?" | Embedding (semantic) |
-| "Find Order #1766" | BM25 (exact match) + Metadata filter |
-| "Find orders from Q1 2024" | Metadata filter |
-| "Find similar orders to #1766" | Embedding (semantic) |
+| Task                              | Tool                                 |
+|:----------------------------------|:-------------------------------------|
+| "What is the status of my order?" | Embedding (semantic)                 |
+| "Find Order #1766"                | BM25 (exact match) + Metadata filter |
+| "Find orders from Q1 2024"        | Metadata filter                      |
+| "Find similar orders to #1766"    | Embedding (semantic)                 |
 
 ## Summary: Key Insights
 

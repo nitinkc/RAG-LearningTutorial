@@ -12,13 +12,15 @@ This section covers:
 ## The Core Problem
 
 Given:
+
 - A **query embedding** (from user question)
 - **Millions of document embeddings** (in a database)
 
 Find:
+
 - The **K most similar document embeddings** (top-K nearest neighbors)
 
-In real-time (< 100ms ideally).
+In real-time (< 100ms or 1/10th of a second ideally).
 
 ## Topics
 

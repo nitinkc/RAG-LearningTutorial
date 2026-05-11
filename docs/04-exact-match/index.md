@@ -18,12 +18,14 @@ You've learned all the pieces. Now we put them together into a complete solution
 Cosine similarity: 0.99 (almost identical!)
 ```
 
-The embedding model learned:
+The embedding model it is learnt:
+
 - "Order #" always appears before a number
 - Numbers in similar ranges are similar
 - Context around them is almost identical
 
-So it treats them as nearly equivalent. **This is correct behavior for embeddings.** They're designed to capture meaning, and "Order #1766" and "Order #1767" are semantically very similar (both are orders, similar structure).
+So it treats them as nearly equivalent. **This is correct behavior for embeddings.** 
+They're designed to capture meaning, and "Order #1766" and "Order #1767" are semantically very similar (both are orders, similar structure).
 
 ## The Four-Layer Solution
 
@@ -81,6 +83,7 @@ hybrid_score = w_dense * dense_norm + w_sparse * sparse_norm
 ```
 
 BM25's IDF term heavily penalties common terms and rewards rare ones:
+
 - "Order" is common (low IDF)
 - "#1766" is unique (very high IDF)
 
@@ -158,12 +161,12 @@ User: "What about Order #1766?"
 
 ## Root Cause Summary
 
-| Aspect | Root Cause | Solution |
-|--------|-----------|----------|
-| Semantic similarity | Embeddings capture meaning, not exact tokens | Use BM25 for keywords |
-| Both returned | Dense search finds both | Add metadata filter |
-| Wrong rank | Dense ranking favors #1767 | Hybrid search re-ranks |
-| Lost context | ID buried in text chunk | Better chunking |
+| Aspect              | Root Cause                                   | Solution               |
+|:--------------------|:---------------------------------------------|:-----------------------|
+| Semantic similarity | Embeddings capture meaning, not exact tokens | Use BM25 for keywords  |
+| Both returned       | Dense search finds both                      | Add metadata filter    |
+| Wrong rank          | Dense ranking favors #1767                   | Hybrid search re-ranks |
+| Lost context        | ID buried in text chunk                      | Better chunking        |
 
 ## Solutions Overview
 

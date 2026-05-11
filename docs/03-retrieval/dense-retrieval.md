@@ -3,6 +3,7 @@
 **Dense retrieval** uses embeddings to find documents with similar meaning to the query.
 
 You've already learned the foundations:
+
 - Embeddings convert text → vectors
 - Cosine similarity measures vector similarity
 - HNSW indexes find similar vectors quickly
@@ -197,20 +198,21 @@ Cross-encoders often reorder results with higher precision.
 
 ## Summary
 
-| Aspect | Dense Retrieval |
-|--------|-----------------|
-| **What** | Embedding-based semantic search |
+| Aspect         | Dense Retrieval                   |
+|:---------------|:----------------------------------|
+| **What**       | Embedding-based semantic search   |
 | **Similarity** | Cosine similarity between vectors |
-| **Speed** | ⚡ Fast (HNSW indexing) |
-| **Strength** | Captures meaning & synonyms |
-| **Weakness** | Treats similar IDs as equivalent |
-| **Best for** | Natural language questions |
+| **Speed**      | ⚡ Fast (HNSW indexing)            |
+| **Strength**   | Captures meaning & synonyms       |
+| **Weakness**   | Treats similar IDs as equivalent  |
+| **Best for**   | Natural language questions        |
 
 ## Key Limitation for This Tutorial
 
 **Dense retrieval alone cannot solve the Order #1766 problem.**
 
 You need additional strategies:
+
 - [Hybrid Search](hybrid-search.md) — Combine with sparse/keyword
 - [Metadata Filtering](metadata-filtering.md) — Filter by exact ID
 - [Chunking Strategies](../04-exact-match/chunking-strategies.md) — Preserve IDs in text

@@ -2,6 +2,8 @@
 
 Imagine you have 10 million document embeddings. A user asks a question. You need to find the top 10 most similar documents **in under 100 milliseconds**.
 
+> **Terminology note:** In this section, a "document" means one retrievable text unit in your vector index (often a chunk), not specifically a MongoDB/BSON document.
+
 **Exact search** (brute force) would compute similarity to all 10 million, then sort. This takes seconds.
 
 **Approximate search** uses clever indexing to skip most documents and still find similar ones. This takes milliseconds.
@@ -204,7 +206,7 @@ For RAG:
 ## Recall-Latency Trade-off Visualization
 
 ```
-100%  ╱─── Brute Force (100% recall)
+100%  |    ╱─── Brute Force (100% recall)
 Recall├   ╱
    95%│  ╱ HNSW with high ef
       │ ╱

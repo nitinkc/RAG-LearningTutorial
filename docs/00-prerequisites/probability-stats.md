@@ -33,6 +33,7 @@ The **inverse document frequency** of a term measures its importance:
 $$\text{IDF}(t) = \log\left(\frac{N}{df_t}\right)$$
 
 where:
+
 - $N$ = total number of documents
 - $df_t$ = number of documents containing term $t$
 
@@ -131,6 +132,7 @@ The most common distribution:
 $$P(x) = \frac{1}{\sqrt{2\pi\sigma^2}} \exp\left(-\frac{(x - \mu)^2}{2\sigma^2}\right)$$
 
 where:
+
 - $\mu$ = mean (center)
 - $\sigma$ = standard deviation (spread)
 

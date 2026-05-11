@@ -174,12 +174,14 @@ chunks = structured_chunking(order)
 ```
 
 **Pros**: 
+
 - ✅ IDs always prominent
 - ✅ Perfect for structured data
 - ✅ Works well with BM25 (exact match)
 - ✅ Works well with metadata filtering
 
 **Cons**: 
+
 - ❌ Requires knowing document structure
 - ❌ Less suitable for unstructured text
 
@@ -405,13 +407,13 @@ for i, chunk in enumerate(structured_chunks):
 
 ## Summary
 
-| Strategy | Best For | Considers IDs? | Support Exact Match? |
-|----------|----------|---|---|
-| Naive | Quick prototypes | ❌ No | ❌ Poor |
-| Semantic | Unstructured text | ❌ No | ⚠ Medium |
-| Recursive | Large documents | ❌ No | ⚠ Medium |
-| **Structured** | **Orders, products, profiles** | ✅ Yes | ✅ Great |
-| Hybrid | Mixed documents | ✅ Yes | ✅ Great |
+| Strategy       | Best For                       | Considers IDs? | Support Exact Match? |
+|:---------------|:-------------------------------|:---------------|:---------------------|
+| Naive          | Quick prototypes               | ❌ No           | ❌ Poor         -     |
+| Semantic       | Unstructured text              | ❌ No           | ⚠ Medium             |
+| Recursive      | Large documents                | ❌ No           | ⚠ Medium             |
+| **Structured** | **Orders, products, profiles** | ✅ Yes          | ✅ Great              |
+| Hybrid         | Mixed documents                | ✅ Yes          | ✅ Great              |
 
 ## Recommendation
 

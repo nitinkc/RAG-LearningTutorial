@@ -12,7 +12,7 @@ This page shows the **complete, practical solution** to the Order #1766 problem.
     [Semantic]      [Keyword]       [Extract
      Embeddings      Search         Constraints]
         │                ↓                │
-        │            [BM25]              │
+        │            [BM25]               │
         │                │                │
         └────────────────┼────────────────┘
                          ↓
@@ -439,13 +439,13 @@ print("✅ Test 3 passed: Ambiguous query handled")
 
 ## Summary: The Solution
 
-| Layer | Component | Purpose |
-|-------|-----------|---------|
-| **1** | Dense Search | Capture meaning (semantic) |
-| **2** | Sparse Search | Find exact keywords (BM25) |
-| **3** | Hybrid Combination | Balance both signals |
-| **4** | Metadata Filtering | Enforce constraints (Order #1766 only) |
-| **5** | Re-ranking (optional) | Fine-tune final ranking |
+| Layer  | Component             | Purpose                                |
+|:-------|:----------------------|:---------------------------------------|
+| **1**  | Dense Search          | Capture meaning (semantic)             |
+| **2**  | Sparse Search         | Find exact keywords (BM25)             |
+| **3**  | Hybrid Combination    | Balance both signals                   |
+| **4**  | Metadata Filtering    | Enforce constraints (Order #1766 only) |
+| **5**  | Re-ranking (optional) | Fine-tune final ranking                |
 
 ## Key Points
 

@@ -8,7 +8,7 @@ Now that you understand all the components (embeddings, retrieval, filtering), l
 ┌────────────────────────────────────────────────────┐
 │                    DATA INGESTION                  │
 ├────────────────────────────────────────────────────┤
-│  Raw Documents → Chunking → Embedding → Indexing  │
+│  Raw Documents → Chunking → Embedding → Indexing   │
 └─────────────────────────────────┬──────────────────┘
                                   │
                     Vector Database (HNSW)
@@ -18,7 +18,7 @@ Now that you understand all the components (embeddings, retrieval, filtering), l
 ┌─────────────────────────────────┴──────────────────┐
 │                  RETRIEVAL PHASE                   │
 ├────────────────────────────────────────────────────┤
-│  Query → Extract Constraints → [Dense + Sparse]   │
+│  Query → Extract Constraints → [Dense + Sparse]    │
 │           ↓          ↓          ↓                  │
 │  Hybrid Combination → Filtering → Re-ranking       │
 └─────────────────────────────────┬──────────────────┘
@@ -28,13 +28,13 @@ Now that you understand all the components (embeddings, retrieval, filtering), l
 ┌─────────────────────────────────┴──────────────────┐
 │               AUGMENTATION PHASE                   │
 ├────────────────────────────────────────────────────┤
-│  Prompt Template → Context Assembly → LLM Input   │
+│  Prompt Template → Context Assembly → LLM Input    │
 └─────────────────────────────────┬──────────────────┘
                                   │
 ┌─────────────────────────────────┴──────────────────┐
 │               GENERATION PHASE                     │
 ├────────────────────────────────────────────────────┤
-│  LLM (Prompt + Context) → Answer + Citations      │
+│  LLM (Prompt + Context) → Answer + Citations       │
 └────────────────────────────────────────────────────┘
 ```
 
@@ -236,6 +236,7 @@ Query → Response Time: ~100-200ms target
 ```
 
 For faster response:
+
 - Skip re-ranking (saves ~50ms)
 - Use smaller LLM (faster but lower quality)
 - Use prompt caching (OpenAI, Anthropic)
@@ -263,14 +264,14 @@ Concurrent users: ~10-50 (depends on infrastructure)
 
 ## Quality Improvement Strategies
 
-| Strategy | Latency Impact | Quality Impact | Cost |
-|----------|---|---|---|
-| Hybrid search | +5ms | +5% | None (built-in) |
-| Re-ranking | +50ms | +7% | Small |
-| Larger LLM | +100ms | +5% | Medium |
-| Prompt engineering | ~0ms | +10% | None (effort) |
-| Fine-tuning embeddings | ~0ms | +15% | High |
-| Multi-stage retrieval | +100ms | +8% | Small |
+| Strategy               | Latency Impact | Quality Impact | Cost            |
+|:-----------------------|:---------------|:---------------|:----------------|
+| Hybrid search          | +5ms           | +5%            | None (built-in) |
+| Re-ranking             | +50ms          | +7%            | Small           |
+| Larger LLM             | +100ms         | +5%            | Medium          |
+| Prompt engineering     | ~0ms           | +10%           | None (effort)   |
+| Fine-tuning embeddings | ~0ms           | +15%           | High            |
+| Multi-stage retrieval  | +100ms         | +8%            | Small           |
 
 ## Deployment Considerations
 

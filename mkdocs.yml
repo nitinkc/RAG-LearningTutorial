@@ -68,8 +68,6 @@ nav:
   
   - "06 · Practical Labs":
     - Labs Overview: "labs/index.md"
-    - Quick Start: "labs/QUICK_START.md"
-    - Curriculum Guide: "labs/CURRICULUM_GUIDE.md"
     - Setup Guide: "labs/SETUP.md"
     - "Lab 0: Environment Setup": "labs/notebooks/lab_0_environment.ipynb"
     - "Lab 1: Vector Math & Metrics": "labs/notebooks/lab_1_vector_math.ipynb"

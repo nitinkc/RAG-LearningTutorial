@@ -52,6 +52,7 @@ url = "https://raw.githubusercontent.com/mongodb/mongo-python-driver/master/bson
 ```
 
 **Option C**: Use MongoDB Atlas (Free Account)
+
 1. Create free MongoDB Atlas account: https://www.mongodb.com/cloud/atlas
 2. Create free cluster (512MB storage)
 3. Load sample dataset from Atlas UI
