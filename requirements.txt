@@ -3,3 +3,4 @@ mkdocs-material>=9.5.0
 pymdown-extensions>=10.8
 Markdown>=3.6
 mkdocs-mermaid2-plugin>=0.6.0
+mkdocs-jupyter>=0.24.0
