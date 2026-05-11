@@ -83,6 +83,7 @@ nav:
 
 plugins:
   - search
+  - mkdocs-jupyter
 
 markdown_extensions:
   - admonition
