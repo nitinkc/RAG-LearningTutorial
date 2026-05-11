@@ -42,6 +42,7 @@ An embedding model might produce:
 | Sentence 3 | [-0.31, 0.28, -0.12, ..., 0.89] |
 
 **Notice**:
+
 - Sentences 1 and 2 have vectors that are very similar (they describe similar situations)
 - Sentence 3 has a vector quite different (different scenario)
 
@@ -86,6 +87,7 @@ This is a powerful emergent property—nobody explicitly told the network to enc
 Here's the critical issue for exact match search:
 
 From an embedding model's perspective:
+
 - "Order #1766" appears in contexts like "your order", "confirmed order", "order total"
 - "Order #1767" appears in very similar contexts
 - Therefore, the embedding treats them as nearly identical!
@@ -94,7 +96,10 @@ $$\text{cosine\_similarity}(Order 1766, Order 1767) \approx 0.99 \quad \text{(al
 
 But they're NOT the same! They're different orders.
 
-The embedding model is doing exactly what it's designed to do—capture semantic similarity. But for structured data like order numbers, we need different approaches. (This is solved in [The Exact Match Problem](../04-exact-match/index.md).)
+The embedding model is doing exactly what it's designed to do—capture semantic similarity.
+But for structured data like order numbers, we need different approaches. (This is solved in [The Exact Match Problem](../04-exact-match/index.md).)
+
+`Cosine_distance = 1 - cosine_similarity`
 
 ## Example: What a Real Embedding Looks Like
 

@@ -54,8 +54,8 @@ If you need Python 3.9+:
 
 ```bash
 # macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 
 # Windows
 python -m venv venv

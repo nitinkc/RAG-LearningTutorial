@@ -4,15 +4,23 @@ There are multiple ways to measure "similarity" between two embedding vectors. E
 
 ## Cosine Similarity (Most Common)
 
+[SciPy Cosine Similarity Code](https://github.com/scipy/scipy/blob/v0.14.1/scipy/spatial/distance.py#L267)
+
 ### Definition
 
-Given normalized vectors $\hat{\vec{u}}$ and $\hat{\vec{v}}$ (each with magnitude 1):
+Given [normalized vectors](../00-prerequisites/linear-algebra.md/#normalization-the-key-to-fair-comparison) $\hat{\vec{u}}$ and $\hat{\vec{v}}$ (each with magnitude 1):
 
 $$\text{cosine\_similarity}(\vec{u}, \vec{v}) = \hat{\vec{u}} \cdot \hat{\vec{v}} = \frac{\vec{u} \cdot \vec{v}}{\|\vec{u}\| \cdot \|\vec{v}\|}$$
+
+Equivalent n-dimensional form using summation notation:
+
+$$\text{cosine\_similarity}(\vec{u}, \vec{v}) = \frac{\sum_{i=1}^{n} u_i v_i}{\sqrt{\sum_{i=1}^{n} u_i^2} \cdot \sqrt{\sum_{i=1}^{n} v_i^2}}$$
 
 This equals the cosine of the angle between vectors:
 
 $$\cos(\theta) = \frac{\vec{u} \cdot \vec{v}}{\|\vec{u}\| \cdot \|\vec{v}\|}$$
+
+![cosine.png](../images/cosine.png)
 
 ### Properties
 
@@ -49,11 +57,13 @@ print(f"Cat-Dog similarity: {sim_1_3:.3f}")  # ≈ 0.256
 ### When to Use
 
 ✅ **Use cosine similarity when**:
+
 - Vectors are normalized (most embedding models do this)
 - Document length varies widely
 - You care about content direction, not magnitude
 
 ❌ **Avoid when**:
+
 - Vectors have important magnitude information
 - Document length is meaningful signal
 
@@ -66,6 +76,8 @@ For vectors $\vec{u}$ and $\vec{v}$:
 $$d_{\text{Euclidean}}(\vec{u}, \vec{v}) = \sqrt{\sum_{i=1}^{n} (u_i - v_i)^2} = \|\vec{u} - \vec{v}\|$$
 
 This is the straight-line distance in space.
+
+![euclidian.png](../images/euclidian.png)
 
 ### Properties
 
@@ -106,11 +118,13 @@ print(f"Using scipy: {scipy_euclidean(u, v):.3f}")  # 5.196
 ### When to Use
 
 ✅ **Use Euclidean distance when**:
+
 - Vectors are **not normalized**
 - Vector magnitude is meaningful
 - You're in low dimensions
 
 ❌ **Avoid in RAG** because:
+
 - Embedding models output normalized vectors
 - Slower than cosine similarity
 - Less semantically meaningful for text
@@ -163,11 +177,13 @@ print(f"Cosine similarities: {cos_sim_1:.3f}, {cos_sim_2:.3f}")  # Same!
 ### When to Use
 
 ✅ **Use dot product when**:
+
 - Vectors are **normalized** (same as cosine then)
 - You need maximum speed
 - Magnitude information is important
 
 ❌ **Avoid when**:
+
 - Vectors have varying magnitudes
 - You need scale-invariant comparison
 
@@ -178,6 +194,8 @@ print(f"Cosine similarities: {cos_sim_1:.3f}, {cos_sim_2:.3f}")  # Same!
 $$d_{\text{Manhattan}}(\vec{u}, \vec{v}) = \sum_{i=1}^{n} |u_i - v_i|$$
 
 Like the distance traveled on a city grid (you can only move horizontally/vertically).
+
+![manhattan.png](../images/manhattan.png)
 
 ### When to Use
 
@@ -220,6 +238,7 @@ Are your vectors normalized to unit length?
 ```
 
 **For RAG systems**:
+
 - 99% of the time: **Cosine Similarity**
 - Some vector DB defaults: **Dot Product** (equivalent for normalized)
 - Rarely: Euclidean or Manhattan
@@ -231,6 +250,7 @@ When using dot product, the problem becomes: **find vectors with maximum dot pro
 This is called **MIPS** (Maximum Inner Product Search).
 
 If you normalize vectors to unit length:
+
 $$\text{argmax}_i (\vec{q} \cdot \vec{v}_i) = \text{argmax}_i \cos(\theta_i)$$
 
 So MIPS on normalized vectors = nearest neighbor in cosine similarity.

@@ -52,4 +52,3 @@ Then move to [Similarity Search](../02-similarity-search/index.md).
 
 **Key Takeaway**: Embeddings are powerful but imperfect. They excel at capturing semantic meaning but fail for structured data. Understanding their strengths and weaknesses is crucial for building good RAG systems.
 
---8<-- "_abbreviations.md"

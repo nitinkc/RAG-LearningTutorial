@@ -74,6 +74,7 @@ $$\text{TF}_{\text{norm}}(t, d) = \frac{\text{count of } t \text{ in } d}{\text{
 $$\text{TF-IDF}(t, d) = \text{TF}(t, d) \times \text{IDF}(t)$$
 
 This gives high scores to terms that are:
+
 1. **Common in the document** (high TF)
 2. **Rare across all documents** (high IDF)
 
@@ -121,7 +122,7 @@ This is why **BM25 search** (an improved TF-IDF variant) works well for exact ma
 
 ## Distributions and Probability Densities
 
-When working with embeddings and vectors, we often assume they follow a **distribution**—a mathematical description of how likely different values are.
+When working with embeddings and vectors, we often **_assume_** they follow a **distribution**—a mathematical description of how likely different values are.
 
 ### Gaussian (Normal) Distribution
 
@@ -164,6 +165,7 @@ plt.show()
 - **Sparse search** (BM25/TF-IDF) → captures *exact terms*
 
 For "Order #1766":
+
 - Semantic search might return Order #1767 too (because they're semantically similar)
 - Sparse search returns ONLY documents with "1766" in them (exact match)
 

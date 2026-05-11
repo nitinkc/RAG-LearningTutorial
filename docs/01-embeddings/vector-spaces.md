@@ -8,10 +8,11 @@ When you move from 2D or 3D to hundreds of dimensions (as with embeddings), geom
 
 ```
     ↑
-    |   ● Point B
-    |      /
-    |    /
-    | /●─────→
+    |    ● Point B
+    |   /
+    |  /
+    | /
+    |●─────→
     |Point A
     +
 ```
@@ -76,6 +77,7 @@ As $d$ increases, the volume becomes increasingly concentrated at the **surface*
 ### Implication
 
 In a RAG system with embeddings in a database:
+
 - Points near the surface are sparsely distributed
 - Real clusters of similar documents are relatively rare
 - Most of the volume is "empty space"

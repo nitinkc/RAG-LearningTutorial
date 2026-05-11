@@ -22,7 +22,7 @@ theme:
     - navigation.instant
     - navigation.tabs
     - navigation.sections
-    - toc.integrate
+#    - toc.integrate
     - header.autohide
 
 nav:

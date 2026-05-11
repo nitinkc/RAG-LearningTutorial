@@ -30,6 +30,8 @@ jupyter>=1.0.0
 ipywidgets>=7.6.0
 ipykernel>=6.0.0
 
+
+gensim>=4.0.0  # For topic modeling and word embeddings
 # Optional: For full RAG with LLM
 # openai>=0.27.0  # If using OpenAI API
 # langchain>=0.0.200  # If using LangChain framework

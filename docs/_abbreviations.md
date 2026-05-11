@@ -44,4 +44,21 @@
 *[UMAP]: Uniform Manifold Approximation and Projection, a dimensionality reduction technique
 *[VectorDB]: Vector database for storing and searching embeddings efficiently
 *[Weaviate]: Open-source vector database with hybrid search and schema capabilities
+*[embedding]: An embedding is a conversion of text into a vector of numbers
+*[GPT]: Generative Pre-trained Transformer, a family of large language models developed by OpenAI
+*[LLMOps]: Large Language Model Operations, the practice of deploying, monitoring, and maintaining large language models in production environments
+*[MCP]: Model Context Protocol, a standard for how models should receive and return information in a structured way
+*[NDCG]: Normalized Discounted Cumulative Gain, an evaluation metric for ranked retrieval results that accounts for the position of relevant items
+*[P95]: 95th percentile latency, a common performance metric indicating the maximum response time for 95% of requests
+*[CI/CD]: Continuous Integration and Continuous Deployment, practices for automating the software development lifecycle
+*[RLHF]: Reinforcement Learning from Human Feedback, a method for fine-tuning language models using feedback from human evaluators
+*[SFT]: Supervised Fine-Tuning, a method for fine-tuning language models on labeled datasets
+*[CoT]: Chain-of-Thought prompting, a technique for eliciting multi-step reasoning from language models by prompting them to generate intermediate reasoning steps
+*[HyDE]: Hypothetical Document Embedding, a technique for improving retrieval by generating an embedding of a hypothetical relevant document based on the query
+*[HITL]: Human-in-the-Loop, a process that involves human feedback or intervention in an otherwise automated system
+*[ReAct]: Reasoning and Acting, a pattern for agent reasoning that involves interleaving reasoning steps with actions in an environment
+*[LCEL]: LangChain Expression Language, a language for defining complex logic in LangChain workflows
+*[StateGraph]: A class in the LangGraph library for defining stateful directed graph workflows
+*[ Hugging Face Transformers]: A popular library for working with transformer-based language models, including BERT, GPT, and many others.
+*[Transformers]: A type of neural network architecture that has become the foundation for many state-of-the-art language models, characterized by self-attention mechanisms that allow them to process input data in parallel and capture long-range dependencies.
 
