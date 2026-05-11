@@ -6,3 +6,6 @@ __pycache__
 site/
 .ipynb_checkpoints/
 docs/labs/notebooks/chroma_data/
+.env
+.env.*
+!.env.example

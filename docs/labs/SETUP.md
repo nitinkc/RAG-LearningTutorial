@@ -82,4 +82,14 @@ pip install -r requirements-labs.txt
 
 **Setup complete?** Start with [Lab 0: Environment Setup](../notebooks/lab_0_environment.ipynb) 🚀
 
---8<-- "_abbreviations.md"
+## Mongo DB
+
+Allow the IP Address of your machine to access the MongoDB Atlas cluster by adding it to the IP Access List in the MongoDB Atlas dashboard.
+![allow_ip.png](../images/allow_ip.png)
+
+After the db is set up, you can inspect the search index to see how documents are being chunked and embedded for retrieval.
+![search_index.png](../images/search_index.png)
+
+![vector_index.png](../images/vector_index.png)
+
+

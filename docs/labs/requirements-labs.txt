@@ -32,7 +32,9 @@ ipykernel>=6.0.0
 
 
 gensim>=4.0.0  # For topic modeling and word embeddings
+# MongoDB Atlas (required for Lab 3 Part 2 and Lab 4)
+pymongo>=4.6.0
+
 # Optional: For full RAG with LLM
 # openai>=0.27.0  # If using OpenAI API
 # langchain>=0.0.200  # If using LangChain framework
-# pymongo>=4.0.0  # If using MongoDB Atlas directly
